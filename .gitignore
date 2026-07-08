@@ -1,0 +1,18 @@
+# ── Local maintenance scripts (not web content) ──────────────
+*.py
+
+# ── OS generated files ────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+# ── Editor / IDE ──────────────────────────────────────────────
+.vscode/
+*.swp
+*.swo
+
+# ── Node (used by local tooling only) ────────────────────────
+node_modules/
+package.json
+package-lock.json

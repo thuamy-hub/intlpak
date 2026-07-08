@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Language auto-detect: this page is the English default. If the visitor
+       already picked a language (cookie) or their browser is set to Chinese,
+       send them straight to /tw before anything renders. Runs first, before
+       fonts/CSS, so there is no flash of the wrong language.
+       Guarded to only run on a real http/https deployment (Netlify) — skipped
+       entirely for local file:// preview so double-clicking this file always
+       just opens the English page normally. -->
+  <script>
+    (function () {
+      // Only redirect on the real production domain — never in local file://
+      // preview or in a design-tool sandbox preview (which has no /tw route
+      // and would otherwise show a blank page after the redirect 404s).
+      if (location.hostname !== 'www.intlpak.com.tw' && location.hostname !== 'intlpak.com.tw') return;
+      var m = document.cookie.match(/(?:^|;\s*)intlpak_lang=(en|zh)/);
+      if (m) { if (m[1] === 'zh') location.replace('/tw'); return; }
+      var lang = ((navigator.language || (navigator.languages && navigator.languages[0]) || '') + '').toLowerCase();
+      if (lang.indexOf('zh') === 0) location.replace('/tw');
+    })();
+  </script>
+
+  <title>Intlpak Enterprises Corporation | Taiwan Packaging Film Manufacturer Since 1991</title>
+  <meta name="description" content="Intlpak is a Taiwan-based manufacturer of high-performance multilayer packaging films: EVOH high barrier film, retort CPP film, nylon thermoforming film, and easy peel film. ISO 9001 · ISO 22000 · HACCP certified. 35+ years. Food, medical, and industrial packaging solutions." />
+  <meta name="keywords" content="EVOH barrier film, retort CPP film, nylon thermoforming film, easy peel film, high barrier packaging film, Taiwan packaging manufacturer, OEM packaging film, multilayer coextrusion film, MAP packaging film, medical packaging film" />
+  <link rel="canonical" href="https://www.intlpak.com.tw/" />
+
+  <!-- Brand typography: Inter (Latin) + Noto Sans TC (CJK fallback for embedded Chinese strings) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Lora:ital,wght@1,500;1,600&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet" />
+
+  <!-- Shared site stylesheet (also used by product.html) -->
+  <link rel="stylesheet" href="assets/css/site.css" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.intlpak.com.tw/" />
+  <meta property="og:title" content="Intlpak Enterprises — Taiwan Packaging Film Manufacturer Since 1991" />
+  <meta property="og:description" content="multilayer coextrusion packaging films: EVOH, retort CPP, nylon thermoforming, easy peel. ISO 9001 · ISO 22000 · HACCP. Food, medical & industrial packaging." />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- hreflang -->
+  <link rel="alternate" hreflang="en" href="https://www.intlpak.com.tw/" />
+  <link rel="alternate" hreflang="zh-Hant" href="https://www.intlpak.com.tw/tw" />
+  <link rel="alternate" hreflang="x-default" href="https://www.intlpak.com.tw/" />
+
+  <!-- JSON-LD: Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://www.intlpak.com.tw/#organization",
+    "name": "Intlpak Enterprises Corporation",
+    "alternateName": ["Intlpak", "英特派企業股份有限公司"],
+    "url": "https://www.intlpak.com.tw",
+    "logo": "https://www.sheet-film.com/img/nlogo.jpg",
+    "foundingDate": "1991",
+    "description": "Taiwan-based manufacturer of high-performance multilayer coextrusion packaging films including EVOH high barrier film, retort CPP film, nylon thermoforming film, and easy peel film for food, medical, cosmetics, and industrial applications.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "No. 11, Gongye North 5th Road",
+      "addressLocality": "Nantou City",
+      "addressRegion": "Nantou County",
+      "postalCode": "540028",
+      "addressCountry": "TW"
+    },
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "telephone": "+886-49-2251060",
+        "contactType": "sales",
+        "areaServed": "Worldwide",
+        "availableLanguage": ["English", "Chinese"]
+      }
+    ],
+    "email": "Intlpak@intlpak.com.tw",
+    "telephone": "+886-49-2251060",
+    "faxNumber": "+886-49-2251064",
+    "numberOfEmployees": { "@type": "QuantitativeValue", "value": 50 },
+    "hasCredential": [
+      { "@type": "EducationalOccupationalCredential", "credentialCategory": "ISO 9001 Quality Management System" },
+      { "@type": "EducationalOccupationalCredential", "credentialCategory": "ISO 22000 Food Safety Management" },
+      { "@type": "EducationalOccupationalCredential", "credentialCategory": "HACCP Food Safety" }
+    ],
+    "sameAs": [
+      "https://www.intlpak.com.tw",
+      "https://www.intlpak.com.tw"
+    ],
+    "knowsAbout": [
+      "EVOH barrier films",
+      "retort packaging",
+      "coextrusion film manufacturing",
+      "multilayer packaging films",
+      "food packaging",
+      "medical device packaging",
+      "modified atmosphere packaging"
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: WebSite + SiteLinksSearchBox -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://www.intlpak.com.tw/#website",
+    "url": "https://www.intlpak.com.tw",
+    "name": "Intlpak Enterprises Corporation",
+    "publisher": { "@id": "https://www.intlpak.com.tw/#organization" },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://www.intlpak.com.tw/product?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <!-- JSON-LD: ItemList of Product Categories -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Intlpak Packaging Film Product Categories",
+    "description": "High-performance multilayer coextrusion packaging films manufactured by Intlpak Enterprises Corporation, Taiwan",
+    "itemListElement": [
+      {
+        "@type": "ListItem", "position": 1,
+        "name": "High Barrier EVOH Film",
+        "description": "PE/EVOH/PE, PP/EVOH/PP, PP/EVOH/PE and NY/EVOH/PE multilayer coextrusion films with superior oxygen and aroma barrier properties. Best for Modified Atmosphere Packaging (MAP) of fresh beef, chicken, pork, and seafood, plus medical and cosmetics packaging.",
+        "url": "https://www.intlpak.com.tw/product/HighBarrierPEEVOHPEFilm"
+      },
+      {
+        "@type": "ListItem", "position": 2,
+        "name": "Retort CPP Film",
+        "description": "High-temperature retort-capable cast polypropylene film for sterilized food pouches and medical packaging.",
+        "url": "https://www.intlpak.com.tw/product/RetortCPPFilm"
+      },
+      {
+        "@type": "ListItem", "position": 3,
+        "name": "Easy Peel Film",
+        "description": "Easy peel retort film for food and specialized easy peel film for contact lens packaging with precise peel force control.",
+        "url": "https://www.intlpak.com.tw/product/EasyPeelFilmforContactLens"
+      },
+      {
+        "@type": "ListItem", "position": 4,
+        "name": "Nylon & MPPPE Film - Medical Care Package",
+        "description": "NY/PE and PP/PE thermoforming films for medical device and pharmaceutical blister packaging, produced in a GMP clean room under ISO 22000 quality control.",
+        "url": "https://www.intlpak.com.tw/product/NylonThermoformingFilm"
+      },
+      {
+        "@type": "ListItem", "position": 5,
+        "name": "Nylon Film - Food Package",
+        "description": "NY/PE and NY/Retort CPP thermoforming films with twist resistance and pinhole-free formability — best for dried meat, sliced ham and cheese, bakery products, and beef jerky.",
+        "url": "https://www.intlpak.com.tw/product/NylonThermoformingFilm2"
+      },
+      {
+        "@type": "ListItem", "position": 6,
+        "name": "Lamination Film for Pulp-Molded Container",
+        "description": "TPX-PP lamination film (microwave- and oven-safe, greaseproof and leak-resistant) and PP/PE lamination film (grease- and water-resistant) for disposable pulp-molded fiber trays.",
+        "url": "https://www.intlpak.com.tw/product/TPX-PP_Lamination_Film"
+      },
+      {
+        "@type": "ListItem", "position": 7,
+        "name": "Laminated Molded Fiber Container",
+        "description": "Finished TPX-PP laminated molded fiber container with a clear PET lid — heat-resistant, leak-proof, oil-resistant, recyclable, microwave- and oven-safe, for delivery bento, pasta, curry rice and other ready-to-eat meals.",
+        "url": "https://www.intlpak.com.tw/product/Laminated_Molded_Fiber_Container"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Page-specific overrides only (shared rules now live in assets/css/site.css) -->
+  <style>
+    .discover-grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: 56px; align-items: center; }
+    .discover-lead { font-size: 17px; color: var(--gray-600); line-height: 1.8; margin-bottom: 22px; }
+    .discover-values { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 28px; }
+    .discover-value-chip { display: inline-flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 700; color: var(--blue-700); background: var(--blue-50); padding: 8px 16px; border-radius: 20px; }
+    @media (max-width: 900px) { .discover-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <nav class="nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Intlpak Home">
+        <img src="assets/img/nlogo.png" alt="Intlpak Enterprises Corporation logo" width="120" height="36" />
+      </a>
+      <div class="nav-links">
+        <a href="#our-story">Discover Intlpak</a>
+        <a href="product.html">Products</a>
+        <a href="news.html">News</a>
+        <a href="join-us.html">Join Us</a>
+        <a href="contact.html" class="nav-cta">Contact Us</a>
+        <div class="nav-lang">
+          <a href="index.html" class="active" onclick="setLangPref('en')">EN</a>
+          <a href="tw/index.html" onclick="setLangPref('zh')">中文</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO (full-bleed, company video still as background) ===== -->
+  <!-- A live autoplaying YouTube iframe is unreliable as a background embed (blocked by
+       many browsers/networks and by YouTube's own framing rules) — the site already avoids
+       this on about.html by linking out to YouTube instead of embedding. Same approach here:
+       the video's official thumbnail is the background image, with a play button that opens
+       the real video on YouTube in a new tab. -->
+  <section class="hero" aria-label="Hero">
+    <img
+      class="hero-bg-img"
+      src="https://img.youtube.com/vi/L1vHt0lkp48/maxresdefault.jpg"
+      alt="Intlpak Enterprises Corporation — company introduction video"
+      fetchpriority="high"
+    />
+    <!-- Dark gradient overlay for text legibility -->
+    <div class="hero-overlay" aria-hidden="true"></div>
+    <a
+      class="hero-watch-btn"
+      href="https://youtu.be/L1vHt0lkp48"
+      target="_blank"
+      rel="noopener"
+      aria-label="Watch Intlpak's company introduction video on YouTube"
+    >
+      <span class="hero-watch-icon">▶</span> Watch Our Story
+    </a>
+
+    <!-- Text content anchored to bottom-left -->
+    <div class="container hero-content-wrap">
+      <div class="hero-content">
+        <div class="hero-eyebrow">
+          <span class="dot"></span>
+          Taiwan Manufacturer · Est. 1991
+        </div>
+        <h1>
+          The Science Behind<br />
+          <strong>Better Packaging</strong>
+        </h1>
+        <p class="hero-desc">
+          Multilayer coextrusion packaging films engineered for food safety, medical reliability, and sustainable innovation. Trusted by global brands for 35+ years.
+        </p>
+        <div class="hero-actions">
+          <a href="product.html" class="btn btn-primary">Explore Products →</a>
+          <a href="contact.html" class="btn btn-ghost">Request a Sample</a>
+        </div>
+        <!-- Cert badges — horizontal inline strip -->
+        <div class="hero-cert-badges" aria-label="Certifications">
+          <div class="hero-cert-badge">✓ ISO 9001</div>
+          <div class="hero-cert-badge">✓ ISO 22000</div>
+          <div class="hero-cert-badge">✓ HACCP</div>
+          <div class="hero-cert-badge">GMP Clean Room</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STATS STRIP ===== -->
+  <section class="stats-strip" aria-label="Company statistics">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item reveal-up">
+          <div class="stat-number" data-count-to="35" data-suffix="+">0+</div>
+          <div class="stat-label">Years of Manufacturing Experience</div>
+        </div>
+        <div class="stat-item reveal-up reveal-delay-1">
+          <div class="stat-number" data-count-to="30" data-suffix="+">0+</div>
+          <div class="stat-label">Film SKUs Across 7 Product Lines</div>
+        </div>
+        <div class="stat-item reveal-up reveal-delay-2">
+          <div class="stat-number" data-count-to="3" data-suffix="">0</div>
+          <div class="stat-label">International Certifications (ISO 9001 · ISO 22000 · HACCP)</div>
+        </div>
+        <div class="stat-item reveal-up reveal-delay-3">
+          <div class="stat-number">∞</div>
+          <div class="stat-label">Custom Width &amp; Thickness to Your Spec</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRODUCT SERIES — Spec Stage ===== -->
+  <section class="section lines-a-section" aria-labelledby="lines-heading">
+    <div class="container">
+      <div class="lines-a-intro reveal-up">
+        <div class="section-label">Seven Product Lines, One Partner</div>
+        <h2 id="lines-heading">A Full Range of Films — and Finished Sustainable Packaging</h2>
+        <p>From high-barrier EVOH film to compostable molded-fiber containers — seven specialized product lines engineered for food, medical, cosmetics, and sustainable packaging, all manufactured under one GMP roof.</p>
+      </div>
+
+      <div class="lines-a-shell reveal-up reveal-delay-1">
+        <div class="lines-a-media">
+          <img id="linesAImg" src="assets/img/category/XHssZx9dMxK7K2i8TFOzeHivs8FKRViPyNKpCIFB.jpg" alt="High Barrier EVOH multilayer film roll" loading="lazy" />
+          <div class="lines-a-num" id="linesANum">01 / 07</div>
+        </div>
+        <div class="lines-a-panel">
+          <div class="lines-a-eyebrow">Product Line</div>
+          <h3 class="lines-a-title" id="linesATitle">High Barrier EVOH Film</h3>
+          <p class="lines-a-desc" id="linesADesc">PE/EVOH/PE, PP/EVOH/PP &amp; NY/EVOH/PE structures — the best choice for MAP packaging of fresh beef, chicken, pork, and seafood.</p>
+          <div class="lines-a-specs" id="linesASpecs">
+            <span class="lines-a-chip">Oxygen Barrier</span>
+            <span class="lines-a-chip">MAP Ready</span>
+            <span class="lines-a-chip">GMP Produced</span>
+          </div>
+          <a href="product.html#evoh" class="lines-a-cta" id="linesACta">View Full Spec →</a>
+        </div>
+      </div>
+
+      <div class="lines-a-thumbs" id="linesAThumbs" role="tablist" aria-label="Product line selector">
+        <a href="product.html#evoh" class="lines-a-thumb active" role="tab" aria-selected="true"
+           data-counter="01 / 07" data-title="High Barrier EVOH Film"
+           data-desc="PE/EVOH/PE, PP/EVOH/PP &amp; NY/EVOH/PE structures — the best choice for MAP packaging of fresh beef, chicken, pork, and seafood."
+           data-specs="Oxygen Barrier|MAP Ready|GMP Produced"
+           data-image="assets/img/category/XHssZx9dMxK7K2i8TFOzeHivs8FKRViPyNKpCIFB.jpg"
+           data-alt="High Barrier EVOH multilayer film roll">
+          <span class="lines-a-thumb-img"><img src="assets/img/category/XHssZx9dMxK7K2i8TFOzeHivs8FKRViPyNKpCIFB.jpg" alt="" loading="lazy" /></span>
+          <span class="lines-a-thumb-info"><span class="lines-a-thumb-num">01</span><span class="lines-a-thumb-name">High Barrier EVOH Film</span></span>
+        </a>
+
+        <a href="product.html#retort-cpp" class="lines-a-thumb" role="tab" aria-selected="false"
+           data-counter="02 / 07" data-title="Retort CPP Film"
+           data-desc="High-clarity cast PP film built to survive steam autoclave sterilization without losing seal integrity."
+           data-specs="Retort Grade|Autoclave Safe|Seal Integrity"
+           data-image="assets/img/category/vHuGV77hmi9SluVX7QkE465bA8BJnjeQRbgupCp8.jpg"
+           data-alt="Retort CPP film roll for sterilized food pouches">
+          <span class="lines-a-thumb-img"><img src="assets/img/category/vHuGV77hmi9SluVX7QkE465bA8BJnjeQRbgupCp8.jpg" alt="" loading="lazy" /></span>
+          <span class="lines-a-thumb-info"><span class="lines-a-thumb-num">02</span><span class="lines-a-thumb-name">Retort CPP Film</span></span>
+        </a>
+
+        <a href="product.html#easy-peel" class="lines-a-thumb" role="tab" aria-selected="false"
+           data-counter="03 / 07" data-title="Easy Peel Film"
+           data-desc="Clean, consistent-force peel films for retort food pouches and contact lens blister packs."
+           data-specs="Precision Peel|Contact-Lens Grade|Consistent Force"
+           data-image="assets/img/category/VBCEj2jxhOnz4o8PhNUJdEJ5xA1om8k810LY9hZ0.jpg"
+           data-alt="Easy peel film for food and contact lens packaging">
+          <span class="lines-a-thumb-img"><img src="assets/img/category/VBCEj2jxhOnz4o8PhNUJdEJ5xA1om8k810LY9hZ0.jpg" alt="" loading="lazy" /></span>
+          <span class="lines-a-thumb-info"><span class="lines-a-thumb-num">03</span><span class="lines-a-thumb-name">Easy Peel Film</span></span>
+        </a>
+
+        <a href="product.html#nylon-medical" class="lines-a-thumb" role="tab" aria-selected="false"
+           data-counter="04 / 07" data-title="Nylon &amp; MPP/PE Film — Medical Care Package"
+           data-desc="Deep-draw NY/PE and PP/PE thermoforming films for medical device and pharmaceutical blister packaging."
+           data-specs="GMP Clean Room|Deep-Draw|Pinhole-Free"
+           data-image="assets/img/products/cm7z1MzaWOOQkzGj8NlpCLC5m31k6ru2PDyFsXxB.jpg"
+           data-alt="MPP/PE thermoforming film for medical blister packaging">
+          <span class="lines-a-thumb-img"><img src="assets/img/products/cm7z1MzaWOOQkzGj8NlpCLC5m31k6ru2PDyFsXxB.jpg" alt="" loading="lazy" /></span>
+          <span class="lines-a-thumb-info"><span class="lines-a-thumb-num">04</span><span class="lines-a-thumb-name">Nylon &amp; MPP/PE — Medical</span></span>
+        </a>
+
+        <a href="product.html#nylon-food" class="lines-a-thumb" role="tab" aria-selected="false"
+           data-counter="05 / 07" data-title="Nylon Film — Food Package"
+           data-desc="Twist-resistant, pinhole-free NY/PE and NY/Retort CPP films — ideal for dried meat, sliced ham &amp; cheese, bakery products, and beef jerky."
+           data-specs="Twist Resistant|Pinhole-Free|Vacuum Skin"
+           data-image="assets/img/products/x0AfmdGZKZ0AfuuPl5q7afEwuc7zl2GmS3PsFz7y.jpg"
+           data-alt="Nylon thermoforming film for vacuum skin food packaging">
+          <span class="lines-a-thumb-img"><img src="assets/img/products/x0AfmdGZKZ0AfuuPl5q7afEwuc7zl2GmS3PsFz7y.jpg" alt="" loading="lazy" /></span>
+          <span class="lines-a-thumb-info"><span class="lines-a-thumb-num">05</span><span class="lines-a-thumb-name">Nylon Film — Food Package</span></span>
+        </a>
+
+        <a href="product.html#lamination-film" class="lines-a-thumb eco" role="tab" aria-selected="false"
+           data-counter="06 / 07" data-title="Lamination Film for Pulp-Molded Container" data-eco="1"
+           data-desc="TPX-PP lamination film (microwave &amp; oven safe, greaseproof &amp; leak-resistant) and PP/PE lamination film (grease &amp; water resistant) for disposable pulp-molded trays."
+           data-specs="Microwave Safe|Greaseproof|Oven Safe"
+           data-image="assets/img/products/nX69fPZEHZx71TlpJtZhb1JrsGsgSTMK3rSlUOye.jpg"
+           data-alt="TPX-PP and PP/PE lamination film for pulp-molded eco containers">
+          <span class="lines-a-thumb-img"><img src="assets/img/products/nX69fPZEHZx71TlpJtZhb1JrsGsgSTMK3rSlUOye.jpg" alt="" loading="lazy" /></span>
+          <span class="lines-a-thumb-info"><span class="lines-a-thumb-num">06</span><span class="lines-a-thumb-name">Lamination Film — Pulp Container</span></span>
+        </a>
+
+        <a href="product.html#molded-fiber-container" class="lines-a-thumb eco" role="tab" aria-selected="false"
+           data-counter="07 / 07" data-title="Laminated Molded Fiber Container" data-eco="1"
+           data-desc="TPX-PP laminated pulp base with a clear PET lid — heat-resistant, leak-proof, oil-resistant and recyclable, ready for delivery bento, pasta, curry rice and more."
+           data-specs="Leak-Proof|Recyclable|Oven Safe"
+           data-image="assets/img/products/T0H4G5j62XeOECmfM2xUr1bQ2aZIjEA9l5tpPh5G.jpg"
+           data-alt="TPX-PP laminated molded fiber container with clear lid">
+          <span class="lines-a-thumb-img"><img src="assets/img/products/T0H4G5j62XeOECmfM2xUr1bQ2aZIjEA9l5tpPh5G.jpg" alt="" loading="lazy" /></span>
+          <span class="lines-a-thumb-info"><span class="lines-a-thumb-num">07</span><span class="lines-a-thumb-name">Molded Fiber Container · New</span></span>
+        </a>
+      </div>
+
+      <div style="text-align:center; margin-top: 44px;">
+        <a href="product.html" class="btn btn-blue">View All 30+ Film Grades &amp; Specs →</a>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    (function () {
+      var strip = document.getElementById('linesAThumbs');
+      if (!strip) return;
+      var stageImg = document.getElementById('linesAImg');
+      var numEl = document.getElementById('linesANum');
+      var title = document.getElementById('linesATitle');
+      var desc = document.getElementById('linesADesc');
+      var specsEl = document.getElementById('linesASpecs');
+      var cta = document.getElementById('linesACta');
+      var thumbs = strip.querySelectorAll('.lines-a-thumb');
+
+      thumbs.forEach(function (thumb) {
+        thumb.addEventListener('click', function (e) {
+          e.preventDefault();
+          thumbs.forEach(function (t) { t.classList.remove('active'); t.setAttribute('aria-selected', 'false'); });
+          thumb.classList.add('active');
+          thumb.setAttribute('aria-selected', 'true');
+          stageImg.src = thumb.getAttribute('data-image');
+          stageImg.alt = thumb.getAttribute('data-alt');
+          stageImg.style.objectPosition = thumb.getAttribute('data-position') || 'center';
+          numEl.textContent = thumb.getAttribute('data-counter');
+          title.textContent = thumb.getAttribute('data-title');
+          desc.textContent = thumb.getAttribute('data-desc');
+          cta.href = thumb.getAttribute('href');
+          specsEl.innerHTML = thumb.getAttribute('data-specs').split('|').map(function (s) {
+            return '<span class="lines-a-chip">' + s + '</span>';
+          }).join('');
+        });
+      });
+    })();
+  </script>
+
+  <!-- ===== APPLICATIONS ===== -->
+  <section class="section" aria-labelledby="apps-heading">
+    <div class="container">
+      <div class="section-header centered reveal-up">
+        <div class="section-label">Applications</div>
+        <h2 id="apps-heading">Solutions for Every Industry</h2>
+        <p>Our multilayer coextrusion films serve demanding applications across food, medical, cosmetics, and sustainable packaging.</p>
+      </div>
+      <div class="applications-grid">
+
+        <div class="app-card reveal-up">
+          <div class="app-card-img">
+            <a href="https://youtu.be/oLdZQIYKzkc" target="_blank" rel="noopener" aria-label="Watch the Food &amp; Beverage Packaging video on YouTube" style="position:relative;display:block;width:100%;height:100%;">
+              <img src="https://img.youtube.com/vi/oLdZQIYKzkc/maxresdefault.jpg" alt="Food &amp; Beverage Packaging video thumbnail" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;" />
+              <div style="position:absolute;inset:0;background:rgba(34,37,29,0.28);"></div>
+              <div class="video-ph-btn" style="position:absolute;top:50%;left:50%;margin:-26px 0 0 -26px;width:52px;height:52px;border-radius:50%;background:rgba(34,37,29,0.55);border:2px solid #C6A353;display:flex;align-items:center;justify-content:center;"><svg width="18" height="18" viewBox="0 0 24 24" fill="#C6A353"><path d="M8 5v14l11-7z"></path></svg></div>
+            </a>
+            <span class="app-img-badge">Food &amp; Beverage</span>
+          </div>
+          <div class="app-card-body">
+            <div class="app-title">Food &amp; Beverage Packaging</div>
+            <div class="app-desc">Modified atmosphere packaging (MAP) for meat and seafood, vacuum skin packaging, retort pouches for baby food and pet food, and flexible barrier pouches for dairy and snack products.</div>
+            <div class="app-films">Films: EVOH Barrier · Retort CPP · NY Thermoforming · NY/Retort CPP</div>
+          </div>
+        </div>
+
+        <div class="app-card reveal-up reveal-delay-1">
+          <div class="app-card-img">
+            <div style="width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;background:#22251D;">
+              <div class="video-ph-btn" style="width:44px;height:44px;border-radius:50%;border:2px solid #C6A353;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><svg width="15" height="15" viewBox="0 0 24 24" fill="#C6A353"><path d="M8 5v14l11-7z"></path></svg></div>
+              <span style="font-size:13px;color:#C7C9BE;">Medical &amp; Pharma video — coming soon</span>
+            </div>
+            <span class="app-img-badge">Medical &amp; Pharma</span>
+          </div>
+          <div class="app-card-body">
+            <div class="app-title">Medical &amp; Pharmaceutical</div>
+            <div class="app-desc">Blister packaging for medical devices, diagnostic kits, and pharmaceutical products. GMP clean-room production ensures food-safe hygiene. Contact lens blister film with precise peel performance.</div>
+            <div class="app-films">Films: Nylon Thermoforming (Medical) · MPP/PE · Easy Peel for Contact Lens</div>
+          </div>
+        </div>
+
+        <div class="app-card reveal-up reveal-delay-2">
+          <div class="app-card-img">
+            <div style="width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;background:#22251D;">
+              <div class="video-ph-btn" style="width:44px;height:44px;border-radius:50%;border:2px solid #C6A353;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><svg width="15" height="15" viewBox="0 0 24 24" fill="#C6A353"><path d="M8 5v14l11-7z"></path></svg></div>
+              <span style="font-size:13px;color:#C7C9BE;">Cosmetics &amp; Care video — coming soon</span>
+            </div>
+            <span class="app-img-badge">Cosmetics &amp; Care</span>
+          </div>
+          <div class="app-card-body">
+            <div class="app-title">Cosmetics &amp; Personal Care</div>
+            <div class="app-desc">High barrier films for cosmetics, skincare, and personal hygiene products requiring long shelf life and aroma retention. Suitable for lamination with printed OPP or PET outer layers.</div>
+            <div class="app-films">Films: EVOH Barrier (PE/EVOH/PE, PP/EVOH/PP)</div>
+          </div>
+        </div>
+
+        <div class="app-card reveal-up reveal-delay-3" style="border-color: #c7d6c2;">
+          <div class="app-card-img">
+            <div style="width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;background:#22251D;">
+              <div class="video-ph-btn" style="width:44px;height:44px;border-radius:50%;border:2px solid #C6A353;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><svg width="15" height="15" viewBox="0 0 24 24" fill="#C6A353"><path d="M8 5v14l11-7z"></path></svg></div>
+              <span style="font-size:13px;color:#C7C9BE;">Sustainable &amp; Eco-Friendly video — coming soon</span>
+            </div>
+            <span class="app-img-badge" style="background: rgba(59,88,52,0.78);"><svg class="icon-svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 11 13.5 11 12"></path></svg> Sustainable</span>
+          </div>
+          <div class="app-card-body">
+            <div class="app-title">Sustainable &amp; Eco-Friendly Packaging</div>
+            <div class="app-desc">TPX-PP lamination film enables pulp-molded fiber containers to be microwave and oven compatible — reducing plastic use by up to 85% vs. traditional trays.</div>
+            <div class="app-films">Films: TPX-PP Lamination Film (NEW) · Mono-material EVOH Film</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== OUR STORY ===== -->
+  <section class="story-flow" id="our-story" aria-labelledby="story-heading">
+    <div class="story-flow-top">
+      <div class="container">
+        <div class="story-label reveal-up">Our Story</div>
+        <h2 id="story-heading" class="story-heading reveal-up">Three Decades of<br>Coextrusion Craftsmanship</h2>
+        <div class="story-row">
+          <div class="story-media story-media-wide reveal-up">
+            <a class="story-video-link" href="https://youtu.be/L1vHt0lkp48" target="_blank" rel="noopener" aria-label="Watch Intlpak's company introduction video on YouTube">
+              <img src="https://img.youtube.com/vi/L1vHt0lkp48/hqdefault.jpg" alt="Intlpak company introduction video" loading="lazy" />
+              <span class="story-video-play">▶</span>
+            </a>
+          </div>
+          <div class="story-copy reveal-up reveal-delay-1">
+            <p>Since 1991, Intlpak Enterprises Corporation has built its reputation one roll at a time as a dedicated multilayer coextrusion film manufacturer. Over thirty-five years, we've refined that technology into seven core product lines — from high-barrier EVOH film and retort-grade CPP to easy-peel and nylon thermoforming film — engineered for food, medical, cosmetics, electronics, and industrial customers worldwide.</p>
+            <p>Every line runs in a GMP clean-room environment, and every roll is backed by ISO 9001, ISO 22000, and HACCP certification — quality you can trace back to the raw material.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="story-hairline"></div>
+
+    <div class="story-flow-mid">
+      <div class="container story-row story-row-reverse">
+        <div class="story-media story-media-wide reveal-up">
+          <a class="story-video-link" href="https://youtu.be/vZIeIHJNHVo" target="_blank" rel="noopener" aria-label="Watch Green Intlpak's sustainable fiber production video on YouTube">
+            <img src="https://img.youtube.com/vi/vZIeIHJNHVo/hqdefault.jpg" alt="Green Intlpak sustainable fiber production" loading="lazy" />
+            <span class="story-video-play">▶</span>
+          </a>
+        </div>
+        <div class="story-copy reveal-up reveal-delay-1">
+          <div class="story-subheading">Two Companies,<br>One Standard.</div>
+          <p>In 2017, we took that same discipline in a new direction. Our subsidiary, Green Intlpak, was founded to bring plant-fiber, fully biodegradable packaging to global foodservice and beverage brands — proof that sustainability and precision engineering aren't mutually exclusive.</p>
+          <p>Where Intlpak delivers the barrier performance food safety demands, Green Intlpak answers the call for lower-carbon, plastic-free alternatives. Together, we give customers a single group they can turn to — whichever side of the packaging equation they're solving for.</p>
+          <a href="https://www.greenintlpak.com" target="_blank" rel="noopener" class="btn btn-blue" style="margin-top:8px;">Visit Green Intlpak →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="story-features-band">
+      <div class="container">
+        <div class="story-features-label">Our Logo, Our Commitments</div>
+        <div class="story-features-grid">
+          <div class="story-feature">
+            <span class="story-feature-num">01</span>
+            <span class="story-feature-title">Quality</span>
+            <p>Precision coextrusion, computer-controlled thickness and defect detection, and full lot traceability from raw material to finished roll.</p>
+          </div>
+          <div class="story-feature">
+            <span class="story-feature-num">02</span>
+            <span class="story-feature-title">Sustainability</span>
+            <p>From high-barrier film to biodegradable fiber molding, meeting every customer's plastic-reduction and carbon targets.</p>
+          </div>
+          <div class="story-feature">
+            <span class="story-feature-num">03</span>
+            <span class="story-feature-title">Customer Trust</span>
+            <p>35 years of export relationships with international brands and distribution partners.</p>
+          </div>
+          <div class="story-feature">
+            <span class="story-feature-num">04</span>
+            <span class="story-feature-title">Employee Relations</span>
+            <p>A stable, skilled workforce and generational know-how — the real reason our quality hasn't wavered in three decades.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== OUR HISTORY (MILESTONES) ===== -->
+  <section class="section" aria-labelledby="milestones-heading">
+    <div class="container">
+      <div class="section-header centered">
+        <div class="section-label">Our History</div>
+        <h2 id="milestones-heading">35 Years of Milestones</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item reveal-up">
+          <div class="timeline-year">1991</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-tag">Intlpak</span>
+            <p>Intlpak Enterprises Corporation is founded in Nantou, Taiwan, bringing advanced multilayer coextrusion technology to produce packaging film for the food, medical, electronics, and optical industries.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal-up reveal-delay-1">
+          <div class="timeline-year">1994</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-tag">Intlpak</span>
+            <p>Japanese company Sun A. Kaken Co., Ltd. becomes a shareholder through equity investment.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal-up reveal-delay-2">
+          <div class="timeline-year">1996</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-tag">Intlpak</span>
+            <p>Established a plastics R&amp;D center and set up an electronic packaging product business unit.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal-up reveal-delay-3">
+          <div class="timeline-year">1997</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-tag">Intlpak</span>
+            <p>Constructed the Dongwan and Kunshan factories.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal-up reveal-delay-4">
+          <div class="timeline-year">1998</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-tag">Intlpak</span>
+            <p>Nan Po Group becomes a shareholder through equity investment, and Intlpak is awarded ISO 9002 certification.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal-up">
+          <div class="timeline-year">1999</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-tag">Intlpak</span>
+            <p>Implemented a Ministry of Economic Affairs technology project on the development of electronic conductive materials.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal-up reveal-delay-1">
+          <div class="timeline-year">2000</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-tag">Intlpak</span>
+            <p>Partnered with DuPont on a joint development project for recycled sneaker heel counters, and joined an electronic film R&amp;D project with a well-noted Japanese chemical company.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal-up reveal-delay-2">
+          <div class="timeline-year">2002</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-tag">Intlpak</span>
+            <p>Converted the ISO quality management system to the 2000 version.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal-up reveal-delay-3">
+          <div class="timeline-year">2003</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-tag">Intlpak</span>
+            <p>Approved as a qualified supplier by Sanyo Electronic Company Limited.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal-up reveal-delay-4">
+          <div class="timeline-year">2005</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-tag">Intlpak</span>
+            <p>Signed a joint development project with US-based NGI to produce 3D lenticular sheets.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal-up">
+          <div class="timeline-year">2007</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-tag">Intlpak</span>
+            <p>Worked with Chang Chun Group to jointly develop high barrier EVOH films.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal-up reveal-delay-1">
+          <div class="timeline-year">2008</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-tag">Intlpak</span>
+            <p>Completed the 2008 version of ISO 9001 certification.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal-up reveal-delay-2">
+          <div class="timeline-year">2009</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-tag">Intlpak</span>
+            <p>Set up a Cover Tape supply chain organization.</p>
+          </div>
+        </div>
+        <div class="timeline-item is-green reveal-up reveal-delay-3">
+          <div class="timeline-year">2017</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-tag">Green Intlpak</span>
+            <p>Subsidiary Green Intlpak is founded to extend the same manufacturing discipline into plant-fiber, biodegradable packaging.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal-up reveal-delay-4">
+          <div class="timeline-year">2021.02</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-tag">Intlpak</span>
+            <p>ISO 22000:2018 Food Safety Management System certification achieved following audit.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal-up">
+          <div class="timeline-year">2023.12</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-tag">Intlpak</span>
+            <p>ISO 22000 and HACCP certifications renewed, extended through 2027.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal-up reveal-delay-1">
+          <div class="timeline-year">2026</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-tag">Intlpak</span>
+            <p>Brand identity refresh (corporate color update) and full website redesign, including an AI-readable product data architecture.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HOT NEWS (dark spotlight, links to News page) ===== -->
+  <section class="section news-spot-section" aria-labelledby="news-teaser-heading">
+    <div class="container">
+      <div class="news-spot-header">
+        <div>
+          <div class="news-spot-label">News &amp; Events</div>
+          <h2 id="news-teaser-heading">Where We'll Be Next</h2>
+        </div>
+        <a href="news.html" class="news-spot-all">All News &amp; Events →</a>
+      </div>
+      <a class="news-spot-hero reveal-up" href="news.html" data-screen-label="Hot News — Featured">
+        <div class="news-spot-hero-img">
+          <img src="assets/img/news/NrhmAy0kuv8u8e8b4tzoTaDXTnMBVOJlKq4jYnQx.png" alt="ProPak Asia 2026 booth preview" loading="lazy" />
+        </div>
+        <div class="news-spot-hero-body">
+          <div class="news-spot-meta">Trade Show · 2026.04.01</div>
+          <h3>ProPak Asia 2026 — Bangkok, Thailand</h3>
+          <p>Rethinking packaging from film to fiber — join us at Booth C1-Q28, a joint booth with Green Intlpak, for a one-stop sustainable alternative to PET &amp; plastics.</p>
+          <span class="news-spot-hero-link">Read More →</span>
+        </div>
+      </a>
+      <a class="news-spot-row reveal-up reveal-delay-1" href="news.html" data-screen-label="Hot News — Secondary">
+        <div class="news-spot-row-img">
+          <img src="assets/img/news/kgmXG3O13WCNkHU1hDicqDzepJxRQOybw03BreLN.jpg" alt="FOODEX JAPAN in Kansai 2025 booth" loading="lazy" />
+        </div>
+        <div class="news-spot-row-text">
+          <div class="news-spot-row-meta">2025.06.16 · Trade Show</div>
+          <div class="news-spot-row-title">FOODEX JAPAN in Kansai 2025 — Osaka</div>
+        </div>
+        <span class="news-spot-row-arrow">→</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATIONS ===== -->
+  <section class="section-sm" aria-labelledby="certs-heading" style="background: var(--gray-50);">
+    <div class="container">
+      <div class="section-header" style="margin-bottom: 36px;">
+        <div class="section-label">Quality &amp; Compliance</div>
+        <h2 id="certs-heading">International Certifications</h2>
+      </div>
+      <div class="certs-row">
+        <a class="cert-item is-link reveal-up" href="assets/certs/ISO-9001-Certificate.pdf" target="_blank" rel="noopener">
+          <div class="cert-photo"><img src="assets/img/about/ccEhscDcECNxZYAv35UyQBvAPuukyOl6KiF8KrMY.jpg" alt="ISO 9001 Certificate" loading="lazy" /></div>
+          <div class="cert-item-body">
+            <div class="cert-name">ISO 9001:2015</div>
+            <div class="cert-sub">Design and Manufacture of Plastic Film and Packaging Materials</div>
+            <div class="cert-meta">Cert. No. 18/14377 · A Cube TIC Limited · Valid to 14 Dec 2026</div>
+            <span class="cert-view-link">View Certificate (PDF) →</span>
+          </div>
+        </a>
+        <a class="cert-item is-link reveal-up reveal-delay-1" href="assets/certs/ISO-22000-Certificate.pdf" target="_blank" rel="noopener">
+          <div class="cert-photo"><img src="assets/img/about/R5Jyxb7KgK4MfBtYL2P7btBc4pPYdCq59nBd1ohw.jpg" alt="ISO 22000 Certificate" loading="lazy" /></div>
+          <div class="cert-item-body">
+            <div class="cert-name">ISO 22000:2018</div>
+            <div class="cert-sub">Food Safety Management System — Packaging Material Production</div>
+            <div class="cert-meta">Cert. No. TA2732-FS · TQCS International · Valid to 4 Feb 2027</div>
+            <span class="cert-view-link">View Certificate (PDF) →</span>
+          </div>
+        </a>
+        <a class="cert-item is-link reveal-up reveal-delay-2" href="assets/certs/HACCP-Certificate.pdf" target="_blank" rel="noopener">
+          <div class="cert-photo"><img src="assets/img/about/roBOOktXpuMvIP2Nmaoun8vCxLDUGJf4cConOflX.jpg" alt="HACCP Certificate" loading="lazy" /></div>
+          <div class="cert-item-body">
+            <div class="cert-name">HACCP: 2020</div>
+            <div class="cert-sub">Hazard Analysis Critical Control Point</div>
+            <div class="cert-meta">Cert. No. MIT21/0374 · MACROCERT International · Valid to 4 Feb 2027</div>
+            <span class="cert-view-link">View Certificate (PDF) →</span>
+          </div>
+        </a>
+        <div class="cert-item reveal-up reveal-delay-3">
+          <div class="cert-item-body">
+            <div class="cert-badge"><svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V10l5 3v-3l5 3v-3l5 3v8"></path><path d="M3 21h18"></path><path d="M18 21V8l3-2v15"></path></svg></div>
+            <div class="cert-name">GMP</div>
+            <div class="cert-sub">Good Manufacturing Practice</div>
+            <div class="cert-meta">Clean-room production standard</div>
+          </div>
+        </div>
+      </div>
+      <p style="font-size:12.5px; color:var(--gray-600); margin-top:22px; max-width:720px;">Registered facility: No. 3 &amp; 11, N. The Fifth Industrial Rd., Nantou City, Taiwan, R.O.C. · ISO 9001 certified by A Cube TIC Limited (UKAS Management Systems No. 0273) · ISO 22000 and HACCP certified by TQCS International (Group) Pty Ltd and MACROCERT International Taiwan Limited respectively.</p>
+    </div>
+  </section>
+
+  <!-- ===== CTA BANNER ===== -->
+  <section class="cta-banner reveal-up" aria-labelledby="cta-heading">
+    <div class="container">
+      <h2 id="cta-heading">Ready to Find the Right Film for Your Application?</h2>
+      <p>Our packaging engineers are ready to help you select the optimal film structure, barrier level, and thickness for your product and process.</p>
+      <div class="cta-actions">
+        <a href="contact.html" class="btn btn-primary">Contact Us →</a>
+        <a href="assets/docs/intlpak-product-catalog.pdf" class="btn btn-outline" target="_blank" rel="noopener">Download Catalog (PDF) ⭳</a>
+        <a href="#faq" class="btn btn-outline">FAQ</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="faq-section" id="faq" aria-labelledby="faq-heading">
+    <div class="container">
+      <div class="faq-intro reveal-up">
+        <div class="contact-inline-eyebrow">Common Questions</div>
+        <h2 id="faq-heading">Frequently Asked Questions</h2>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item" open>
+          <summary>How long has Intlpak been in business?</summary>
+          <p>Since 1991. We're a Taiwan-based multilayer coextrusion film manufacturer with over three decades of production experience.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Do you ship internationally?</summary>
+          <p>Yes. We export worldwide from Taiwan under standard Incoterms (FOB, CIF, etc.) — ask our team for a quote and lead time to your destination.</p>
+        </details>
+        <details class="faq-item">
+          <summary>What industries and applications do you serve?</summary>
+          <p>Food, medical device and pharmaceutical packaging, cosmetics, and sustainable packaging — from high-barrier MAP film to compostable molded-fiber containers, across seven specialized product lines.</p>
+        </details>
+        <details class="faq-item">
+          <summary>What is the minimum order quantity (MOQ)?</summary>
+          <p>MOQ varies by film structure and gauge, typically starting around 500&ndash;1,000 kg per grade. Contact our team with your target application and we'll confirm the exact MOQ for that film.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Can I request a free sample before placing an order?</summary>
+          <p>Yes. Use the contact form to tell us the product line and grade you're evaluating, and we'll arrange a sample roll for testing on your line.</p>
+        </details>
+        <details class="faq-item">
+          <summary>What certifications does Intlpak hold?</summary>
+          <p>All films are produced in a GMP clean-room environment and backed by ISO 9001, ISO 22000, and HACCP certification, with full traceability back to raw materials.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Do you offer custom film structures or gauges?</summary>
+          <p>Yes. Our R&amp;D team can tailor barrier level, thickness, and lamination structure to your product, forming depth, and packaging line — reach out with your specs.</p>
+        </details>
+        <details class="faq-item">
+          <summary>How can I become a distributor or partner?</summary>
+          <p>We're always open to new regional partnerships — visit our <a href="join-us.html" style="color:var(--brass-500); font-weight:600;">Join Us</a> page or reach out through the contact form to start the conversation.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" aria-label="Site footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/img/nlogo-white.png" alt="Intlpak Enterprises Corporation" />
+          <p>Taiwan-based manufacturer of high-performance multilayer coextrusion packaging films since 1991.</p>
+          <div class="footer-qr-group" style="margin-top: 16px;">
+            <a href="https://api.whatsapp.com/send?phone=0910667858" class="footer-qr-item" aria-label="WhatsApp" title="WhatsApp"><img src="assets/img/qr-whatsapp.png" alt="WhatsApp QR code" loading="lazy" /><span>WhatsApp</span></a>
+            <a href="https://line.me/ti/p/~@769yzvwo" class="footer-qr-item" aria-label="LINE" title="LINE"><img src="assets/img/qr-line.png" alt="LINE QR code" loading="lazy" /><span>LINE</span></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Products</h4>
+          <a href="product.html#easy-peel">Easy Peel Film</a>
+          <a href="product.html#retort-cpp">Retort CPP Film</a>
+          <a href="product.html#evoh">EVOH Barrier Film</a>
+          <a href="product.html#nylon-medical">Medical Nylon Film</a>
+          <a href="product.html#nylon-food">Food Nylon Film</a>
+          <a href="product.html#lamination-film">Pulp Lamination Film</a>
+          <a href="product.html#molded-fiber-container">Molded Fiber Container</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="#our-story">Discover Intlpak</a>
+          <a href="news.html">News &amp; Events</a>
+          <a href="join-us.html">Join Us</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <div class="footer-contact-item">
+            <span class="icon"><svg class="icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13 1 .36 1.98.68 2.92a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.16-1.16a2 2 0 0 1 2.11-.45c.94.32 1.92.55 2.92.68A2 2 0 0 1 22 16.92Z"></path></svg></span>
+            <a href="tel:+886492251060">+886-49-2251060</a>
+          </div>
+          <div class="footer-contact-item">
+            <span class="icon"><svg class="icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><polyline points="2 7 12 13 22 7"></polyline></svg></span>
+            <a href="mailto:Intlpak@intlpak.com.tw">Intlpak@intlpak.com.tw</a>
+          </div>
+          <div class="footer-contact-item">
+            <span class="icon"><svg class="icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg></span>
+            <a href="https://goo.gl/maps/Qisx7JZuKMgSZcoA7" target="_blank" rel="noopener">No. 11, Gongye North 5th Road, Nantou City, Taiwan 540028</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-divider">
+        <div class="footer-copy">
+          © <script>document.write(new Date().getFullYear())</script> Intlpak Enterprises Corporation. All rights reserved.
+          &nbsp;|&nbsp; <a href="tw/index.html" onclick="setLangPref('zh')" style="color:rgba(255,255,255,0.4);">繁體中文</a>
+        </div>
+        <div class="footer-copy">
+          ISO 9001 · ISO 22000 · HACCP Certified · GMP Clean Room Production
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== INLINE VIDEO MODAL ===== -->
+  <div class="video-modal" id="videoModal" aria-hidden="true">
+    <div class="video-modal-backdrop"></div>
+    <div class="video-modal-inner">
+      <button class="video-modal-close" aria-label="Close video">✕</button>
+      <div class="video-modal-frame"><iframe id="videoModalIframe" src="" title="Video player" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
+    </div>
+  </div>
+
+  <script>
+    // ── Language preference ──────────────────────────────────────────
+    // The redirect script in <head> auto-detects the visitor's browser
+    // language and sends first-time visitors to /en or /tw. Once a person
+    // manually picks a language here, we store that choice in a cookie so
+    // future visits always honor the manual pick instead of re-guessing.
+    function setLangPref(lang) {
+      document.cookie = 'intlpak_lang=' + lang + '; path=/; max-age=' + (60 * 60 * 24 * 365) + '; SameSite=Lax';
+    }
+
+    // ── Inline video modal (data-yt-id elements open a lightbox instead of navigating) ──
+    (function () {
+      var vm = document.getElementById('videoModal');
+      if (!vm) return;
+      var vmFrame = document.getElementById('videoModalIframe');
+      var openVideoModal = function (id) {
+        vmFrame.src = 'https://www.youtube.com/embed/' + id + '?autoplay=1&rel=0';
+        vm.classList.add('is-open');
+        vm.setAttribute('aria-hidden', 'false');
+      };
+      var closeVideoModal = function () {
+        vm.classList.remove('is-open');
+        vm.setAttribute('aria-hidden', 'true');
+        vmFrame.src = '';
+      };
+      document.querySelectorAll('[data-yt-id]').forEach(function (el) {
+        el.addEventListener('click', function (e) {
+          e.preventDefault();
+          openVideoModal(el.getAttribute('data-yt-id'));
+        });
+      });
+      vm.querySelectorAll('.video-modal-backdrop, .video-modal-close').forEach(function (el) {
+        el.addEventListener('click', closeVideoModal);
+      });
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') closeVideoModal();
+      });
+    })();
+    (function () {
+      var els = document.querySelectorAll('.reveal-up');
+      if (!('IntersectionObserver' in window) || !els.length) {
+        els.forEach(function (el) { el.classList.add('is-visible'); });
+        return;
+      }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            io.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.2, rootMargin: '0px 0px -60px 0px' });
+      els.forEach(function (el) { io.observe(el); });
+    })();
+
+    // ── Sticky nav: shrink + shadow after scrolling past the hero ──────
+    (function () {
+      var nav = document.querySelector('.nav');
+      if (!nav) return;
+      var onScroll = function () {
+        nav.classList.toggle('is-scrolled', window.scrollY > 40);
+      };
+      onScroll();
+      window.addEventListener('scroll', onScroll, { passive: true });
+    })();
+
+    // ── Stats strip: count up when scrolled into view ───────────────────
+    (function () {
+      var nums = document.querySelectorAll('.stat-number[data-count-to]');
+      if (!nums.length) return;
+      var animate = function (el) {
+        var target = parseFloat(el.getAttribute('data-count-to'));
+        var suffix = el.getAttribute('data-suffix') || '';
+        var duration = 1200, start = null;
+        function step(ts) {
+          if (start === null) start = ts;
+          var progress = Math.min((ts - start) / duration, 1);
+          var eased = 1 - Math.pow(1 - progress, 3);
+          el.textContent = Math.round(target * eased) + suffix;
+          if (progress < 1) requestAnimationFrame(step);
+        }
+        requestAnimationFrame(step);
+      };
+      if (!('IntersectionObserver' in window)) {
+        nums.forEach(animate);
+        return;
+      }
+      var io2 = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            animate(entry.target);
+            io2.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.5 });
+      nums.forEach(function (el) { io2.observe(el); });
+    })();
+  </script>
+</body>
+</html>
